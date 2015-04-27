@@ -214,46 +214,16 @@ XULRuTorrentAddonChrome.BrowserOverlay = {
 			XULRuTorrentAddonChrome.AuthObserver.register(RTMainUrl, rtUser, rtPasswd);
 		}
 
-		let found = false;
-/* Dirty hack :(
-		// Check each tab of this browser instance
-    let numTabs = gBrowser.mPanelContainer.childNodes.length;
-		let rtRE = new RegExp(rtUrl, "i")
+		let wm = Cc["@mozilla.org/appshell/window-mediator;1"].getService(Ci.nsIWindowMediator);
+		let recentWindow = wm.getMostRecentWindow("navigator:browser");
 
-		while (index < numTabs && !found)
-		{
-				let currentTab = gBrowser.getBrowserAtIndex(index);
+		recentWindow.delayedOpenTab();
 
-				if (currentTab.currentURI.spec.match(rtRE))
-				{
-						// The URL is already opened. Select its tab.
-						gBrowser.selectedTab = getBrowser().mTabs[index];
+		let lastBrowserNum = gBrowser.browsers.length-1;
 
-						// Focus *this* browser
-						gBrowser.focus();
+		gBrowser.browsers[lastBrowserNum].loadURI(RTMainUrl);
 
-						found = true;
-				}
-				index++;
-		}
-*/
-		// Our URL isn't open. Open it now.
-		if (!found) {
-
-			let wm = Cc["@mozilla.org/appshell/window-mediator;1"].getService(Ci.nsIWindowMediator);
-			let recentWindow = wm.getMostRecentWindow("navigator:browser");
-
-			recentWindow.delayedOpenTab();
-
-			let lastBrowserNum = gBrowser.browsers.length-1;
-
-			gBrowser.browsers[lastBrowserNum].loadURI(RTMainUrl);
-
-			return(lastBrowserNum);
-		}
-		else{
-			return(index);
-		}
+		return(lastBrowserNum);
 	},
 
 	addTorrentDialog: function(Name, TorrentUrl, MainUrl, DefaultDir, User, Password)
