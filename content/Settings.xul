@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://rtadd/locale/rtaddsettings.dtd">
+<dialog xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	id="rtaddPreferences"
+	minwidth="500"
+	minheight="350"
+	onload="XULRuTorrentAddon.Settings.initPrefWindow();"
+	buttons="cancel, accept"
+	title="&prefwindow.title;">
+
+	<script src="chrome://rtadd/content/Settings.js" />
+
+	<groupbox>
+		<radiogroup id="profile_type" orient="horizontal">
+			<radio id="single" label="&rt_single_server.label;"/>
+			<radio id="multiple" label="&rt_multiple_servers.label;"/>
+		</radiogroup>
+	</groupbox>
+	<groupbox id="pane1" flex="1">
+		<vbox id="single_profile" flex ="1">
+			<label control="rt_url">&rt_url.label;</label><textbox id="rt_url" size="50"/>
+			<spacer height="5"/>
+			<hbox>
+				<spacer width="15"/>
+				<vbox pack="center"><label control="rt_user" width="45">&rt_user.label;</label></vbox>
+				<textbox id="rt_user" size="20"/>
+			</hbox>
+			<hbox>
+				<spacer width="15"/>
+				<vbox pack="center"><label control="rt_passwd" width="45">&rt_passwd.label;</label></vbox>
+				<textbox id="rt_passwd" size="20" type="password"/>
+			</hbox>
+			<spacer height="10"/>
+			<label control="rt_dir">&rt_dir.label;</label><textbox id="rt_dir" size="50"/>
+		</vbox>
+		<vbox id="multi_profile" flex ="1">
+			<tree id="ServersTree" editable="true" flex ="1" hidecolumnpicker="true">
+				<treecols>
+					<treecol id="name_tcol" label="Name" minwidth="80" flex="1"/>
+					<splitter class="tree-splitter" />
+					<treecol id="url_tcol" label="&rt_url.label;" flex="1"/>
+					<splitter class="tree-splitter" />
+					<treecol id="dir_tcol" label="&rt_dir.label;" flex="1"/>
+					<splitter class="tree-splitter" />
+					<treecol id="user_tcol" label="&rt_user.label;" minwidth="50" flex="1"/>
+					<splitter class="tree-splitter" />
+					<treecol id="passwd_tcol" label="&rt_passwd.label;" minwidth="50" flex="1"/>
+				 </treecols>
+				<treechildren id="ServersList">
+				</treechildren>
+			</tree>
+			<!-- New and Delete Buttons -->
+			<hbox pack="center">
+				<hbox pack="start" flex="40">
+					<button id="upButton" image="chrome://rtadd/skin/up.png" label="&up.label;" />
+					<button id="downButton" image="chrome://rtadd/skin/down.png" label="&down.label;" />
+				</hbox>
+				<spacer flex="10" />
+				<hbox pack="end" flex="50">
+					<button id="newButton" image="chrome://rtadd/skin/add.png" label="&new.button;"/>
+					<button id="deleteButton"  image="chrome://rtadd/skin/remove.png" label="&delete.button;" />
+				</hbox>
+			</hbox>
+		</vbox>
+	</groupbox>
+	<groupbox>
+		<checkbox id="rt_show_icon" label="&rt_show_icon.label;"/>
+		<checkbox id="rt_open_webiu" label="&rt_open_webiu.label;"/>
+		<spacer height="5" />
+		<checkbox id="rt_show_dir_list" label="&rt_show_dir_list.label;"/>
+		<checkbox id="rt_dblclick_navigation" label="&rt_dblclick_navigation.label;"/>
+		<checkbox id="rt_json_for_dir" label="&rt_json_for_dir.label;"/>
+	</groupbox>
+</dialog>
+

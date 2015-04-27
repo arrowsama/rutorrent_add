@@ -1,0 +1,17 @@
+<!ENTITY prefwindow.title "Add to ruTorrent settings">
+<!ENTITY pane1.title "Add torrent to ruTorrent settings">
+<!ENTITY rt_show_icon.label "Show ruTorrent icon on the status bar">
+<!ENTITY rt_url.label "ruTorrent url (for example http://your.domain.name):">
+<!ENTITY rt_dir.label "Default directory for downloads:">
+<!ENTITY rt_user.label          "User:">
+<!ENTITY rt_passwd.label        "Password:">
+<!ENTITY rt_open_webiu.label "Open ruTorrent page when torrent added">
+<!ENTITY rt_show_dir_list.label "Show directory list in main window">
+<!ENTITY rt_single_server.label "Single server">
+<!ENTITY rt_multiple_servers.label "Multiple servers">
+<!ENTITY new.button             "New">
+<!ENTITY delete.button          "Delete">
+<!ENTITY up.label               "Up">
+<!ENTITY down.label             "Down">
+<!ENTITY rt_dblclick_navigation.label "Use dbl click in directory list">
+<!ENTITY rt_json_for_dir.label "Use JSON for a list of directories (ruTorrent 3.2 and more)">

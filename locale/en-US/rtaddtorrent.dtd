@@ -1,0 +1,6 @@
+<!ENTITY rtaddtorrent.label "Send Link to ruTorrent WebUI">
+<!ENTITY rtdir.label "Downloads directory:">
+<!ENTITY rtnot_add_path.label "Don't add the name of the torrent to the path">
+<!ENTITY rttorrents_start_stopped.label "Don't start downloading automatically">
+<!ENTITY rtfast_resume.label "Don't check the hash when a torrent was added">
+<!ENTITY rttorrentlabel.label "Label:">

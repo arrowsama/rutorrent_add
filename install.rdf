@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>rtadd@alexey.kolokolnikov</em:id>
+		<em:name>ruTorrent add</em:name>
+		<em:version>0.0.15</em:version>
+		<em:creator>Alexey Kolokolnikov</em:creator>
+		<em:description>Add .torrent files from a page to your ruTorrent server</em:description>
+		<em:optionsURL>chrome://rtadd/content/Settings.xul</em:optionsURL>
+		<em:iconURL>chrome://rtadd/skin/rtadd.png</em:iconURL>
+
+		<em:homepageURL>http://redmine.rutorrent.org/projects/ffplugin</em:homepageURL>
+		<em:translator>nicobubulle (fr-FR)</em:translator>
+
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- firefox -->
+				<em:minVersion>3.0</em:minVersion>
+				<em:maxVersion>99</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	</Description>
+</RDF>

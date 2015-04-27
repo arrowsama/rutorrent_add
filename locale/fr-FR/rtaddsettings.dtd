@@ -1,0 +1,17 @@
+<!ENTITY prefwindow.title       "Configuration de 'ruTorrent Add'">
+<!ENTITY pane1.title            "Configuration de 'ruTorrent Add'">
+<!ENTITY rt_show_icon.label     "Montrer l'icône ruTorrent dans la barre de statut">
+<!ENTITY rt_url.label           "URL de l'interface (par exemple http://adresse.de.ma.box/) :">
+<!ENTITY rt_dir.label           "Répertoire par défaut pour les téléchargements :">
+<!ENTITY rt_open_webiu.label    "Ouvrir la page ruTorrent lorsqu'un torrent est ajouté">
+<!ENTITY rt_show_dir_list.label "Voir la liste des répertoires dans la fenêtre principale">
+<!ENTITY rt_single_server.label "Serveur unique">
+<!ENTITY rt_multiple_servers.label "Serveurs multiples">
+<!ENTITY new.button             "Ajouter">
+<!ENTITY delete.button          "Supprimer">
+<!ENTITY up.label               "Monter">
+<!ENTITY down.label             "Descendre">
+<!ENTITY rt_dblclick_navigation.label "Utiliser le double clique pour naviguer dans les dossiers">
+<!ENTITY rt_user.label          "User:">
+<!ENTITY rt_passwd.label        "Password:">
+<!ENTITY rt_json_for_dir.label "Use JSON for a list of directories (ruTorrent 3.2 and more)">

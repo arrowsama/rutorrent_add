@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://rtadd/skin/rtaddstatusicon.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://rtadd/locale/rtadd.dtd">
+<overlay id="rtaddOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+// This imports our javascript.
+
+	<script type="application/x-javascript" src="chrome://rtadd/content/BrowserOverlay.js"></script>
+
+	<stringbundleset id="stringbundleset">
+		<stringbundle id="string-bundle" src="chrome://rtadd/locale/rtadd.properties"/>
+	</stringbundleset>
+
+
+// This is for the right click menu.
+
+	<popup id="contentAreaContextMenu">
+		<menuseparator id="rtaddsep"/>
+		<menuitem id="add_to_rtorrent"
+			label="&rtadd.label;"
+			class="menuitem-iconic"
+			image="chrome://rtadd/skin/rtadd-icon15.png"
+			oncommand="XULRuTorrentAddonChrome.BrowserOverlay.addTorrentDialog('Default', gContextMenu.getLinkURL(), XULRuTorrentAddon.settings.rtMainUrl, XULRuTorrentAddon.settings.rtDir, XULRuTorrentAddon.settings.rtUser, XULRuTorrentAddon.settings.rtPass);"
+			>
+		</menuitem>
+		<menu id="add_to_rtorrent_multi_menu"
+			label="&rtadd.label;"
+			class="menu-iconic"
+			image="chrome://rtadd/skin/rtadd-icon15.png"
+			>
+			<menupopup id="add_to_rtorrent_multi"></menupopup>
+		</menu>
+	</popup>
+
+	<statusbar id="status-bar">
+		<statusbarpanel id="rtaddstatus-icon"
+			class="statusbarpanel-iconic"
+			tooltiptext="&rtaddToolbar.tooltip;"
+			insertbefore="security-button"
+			context="rtaddstatus_context"
+			>
+		</statusbarpanel>
+		<popup id="rtaddstatus_context">
+			<menuitem id="rt_sb_settings"
+				label="&rtaddToolbar.settings;"
+				oncommand=" window.openDialog('chrome://rtadd/content/Settings.xul',
+					null, 'chrome, dialog, resizable, centerscreen=yes'); ">
+			</menuitem>
+			<menuseparator/>
+			<menuitem id="rt_sb_open_webiu" type="checkbox"
+				label="&rtaddToolbar.open_webiu;"
+				onclick=" XULRuTorrentAddonChrome.BrowserOverlay.setFastPref('extensions.rtadd.rt_open_webiu', event.target.getAttribute('checked'));"
+				>
+			</menuitem>
+			<menuitem id="rt_sb_show_dir_list" type="checkbox"
+				label="&rtaddToolbar.show_dir_list;"
+				onclick=" XULRuTorrentAddonChrome.BrowserOverlay.setFastPref('extensions.rtadd.rt_show_dir_list', event.target.getAttribute('checked'));"
+				>
+			</menuitem>
+		</popup>
+			<popup id="rtaddstatus_popup"></popup>
+		</statusbar>
+</overlay>

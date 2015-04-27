@@ -1,0 +1,6 @@
+<!ENTITY rtaddtorrent.label "Envoyer le lien vers ruTorrent">
+<!ENTITY rtdir.label "Répertoire de téléchargement :">
+<!ENTITY rtnot_add_path.label "Ne pas ajouter le nom du torrent au répertoire">
+<!ENTITY rttorrents_start_stopped.label "Ne pas démarrer le téléchargement automatiquement">
+<!ENTITY rtfast_resume.label "Ne pas vérifier le hash du torrent lorsqu'il est ajouté">
+<!ENTITY rttorrentlabel.label "Étiquette:">

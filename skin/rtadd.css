@@ -1,0 +1,13 @@
+image#dir_button {
+	padding: 1px 10px 5px 3px;
+	min-width:22px;
+	list-style-image: url("chrome://rtadd/skin/rtadd-folder.png");
+}
+
+image#dir_button:hover {
+	list-style-image: url("chrome://rtadd/skin/rtadd-folder-hover.png");
+}
+
+image#dir_button:hover:active {
+	padding: 3px 8px 3px 5px;
+}

@@ -1,0 +1,9 @@
+statusbarpanel#rtaddstatus-icon {
+	/* Center-align the enclosed icon so it doesn't stretch to fill the box. */
+	-moz-box-align: center;
+	padding: 0px 4px 0px 4px;
+	cursor: pointer;
+
+	/* Defines the image showed has an icon */
+	list-style-image: url("chrome://rtadd/skin/rtadd-icon.png");
+}

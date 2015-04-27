@@ -1,0 +1,6 @@
+<!ENTITY rtaddtorrent.label "Добавление новой загрузки в ruTorrent">
+<!ENTITY rtdir.label "Каталог для загрузки:">
+<!ENTITY rtnot_add_path.label "Не добавлять имя торрента к пути">
+<!ENTITY rttorrents_start_stopped.label "Не начинать закачку автоматически">
+<!ENTITY rtfast_resume.label "Не проверять хеш на старте">
+<!ENTITY rttorrentlabel.label "Метка:">

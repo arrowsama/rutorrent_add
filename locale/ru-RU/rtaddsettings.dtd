@@ -1,0 +1,17 @@
+<!ENTITY prefwindow.title       "Параметры добавления ссылки в ruTorrent">
+<!ENTITY pane1.title            "Параметры добавления ссылки в ruTorrent">
+<!ENTITY rt_show_icon.label     "Показывать иконку ruTorrent на панели">
+<!ENTITY rt_url.label           "Адрес ruTorrent (например http://your.domain.name):">
+<!ENTITY rt_dir.label           "Каталог по умолчанию для скачивания:">
+<!ENTITY rt_user.label          "Логин:">
+<!ENTITY rt_passwd.label        "Пароль:">
+<!ENTITY rt_open_webiu.label    "Открывать страницу ruTorrent при передаче ссылки">
+<!ENTITY rt_show_dir_list.label "Отображать список каталогов в главном окне">
+<!ENTITY rt_single_server.label "Один сервер">
+<!ENTITY rt_multiple_servers.label "Несколько серверов">
+<!ENTITY new.button             "Добавить">
+<!ENTITY delete.button          "Удалить">
+<!ENTITY up.label               "Вверх">
+<!ENTITY down.label             "Вниз">
+<!ENTITY rt_dblclick_navigation.label "Навигация по папкам с помощью двойного щелчка мыши">
+<!ENTITY rt_json_for_dir.label "Использовать JSON для получения списка каталогов (ruTorrent 3.2 и выше)">

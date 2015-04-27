@@ -1,0 +1,5 @@
+<!ENTITY rtadd.label "Отправить .torrent файл в ruTorrent WebUI">
+<!ENTITY rtaddToolbar.tooltip "Открыть ruTorrent">
+<!ENTITY rtaddToolbar.settings "Параметры">
+<!ENTITY rtaddToolbar.open_webiu    "Открывать страницу ruTorrent при передаче ссылки">
+<!ENTITY rtaddToolbar.show_dir_list "Отображать список каталогов в главном окне">

@@ -1,0 +1,5 @@
+<!ENTITY rtadd.label "Envoyer le lien vers ruTorrent">
+<!ENTITY rtaddToolbar.tooltip "Ouvrir la page ruTorrent">
+<!ENTITY rtaddToolbar.settings "Options">
+<!ENTITY rtaddToolbar.open_webiu    "Ouvrir la page ruTorrent lorsqu'un torrent est ajouté">
+<!ENTITY rtaddToolbar.show_dir_list "Voir la liste des répertoires dans la fenêtre principale">
