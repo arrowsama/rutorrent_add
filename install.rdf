@@ -3,7 +3,7 @@
 	<Description about="urn:mozilla:install-manifest">
 		<em:id>rtadd@alexey.kolokolnikov</em:id>
 		<em:name>ruTorrent add</em:name>
-		<em:version>0.0.15</em:version>
+		<em:version>0.1.0</em:version>
 		<em:creator>Alexey Kolokolnikov</em:creator>
 		<em:description>Add .torrent files from a page to your ruTorrent server</em:description>
 		<em:optionsURL>chrome://rtadd/content/Settings.xul</em:optionsURL>
