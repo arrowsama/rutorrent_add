@@ -19,14 +19,14 @@
 		<menuitem id="add_to_rtorrent"
 			label="&rtadd.label;"
 			class="menuitem-iconic"
-			image="chrome://rtadd/skin/rtadd-icon.png"
+			image="chrome://rtadd/skin/rtadd-icon15.png"
 			oncommand="XULRuTorrentAddonChrome.BrowserOverlay.addTorrentDialog('Default', gContextMenu.getLinkURL(), XULRuTorrentAddon.settings.rtMainUrl, XULRuTorrentAddon.settings.rtDir, XULRuTorrentAddon.settings.rtUser, XULRuTorrentAddon.settings.rtPass);"
 			>
 		</menuitem>
 		<menu id="add_to_rtorrent_multi_menu"
 			label="&rtadd.label;"
 			class="menu-iconic"
-			image="chrome://rtadd/skin/rtadd-icon.png"
+			image="chrome://rtadd/skin/rtadd-icon15.png"
 			>
 			<menupopup id="add_to_rtorrent_multi"></menupopup>
 		</menu>
